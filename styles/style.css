@@ -22,6 +22,7 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .decorated-zone {
@@ -56,7 +57,7 @@
   top: 20px;
   right: 20px;
   font-size: 18px;
-  display: flex;
+  display: var(--rec-display);
   align-items: center;
   gap: 8px;
   font-family: inherit;
@@ -165,7 +166,6 @@
 .section__subtitle {
   background-color: var(--accent-background, #ff0055);
   color: var(--card-title);
-  padding: 4px 10px;
   font-size: 18px;
 }
 
@@ -176,7 +176,6 @@
 .card__title {
   color: var(--card-title);
   background-color: var(--accent-background, #ff0055);
-  padding: 4px 10px;
   font-weight: bold;
   width: 100%;
   box-sizing: border-box;
@@ -240,12 +239,16 @@
   text-transform: lowercase;
   color: var(--main-title-color, #DB00FF);
   text-shadow: 2px 2px 0 var(--text-shadow-color);
-  justify-self: center; 
+  justify-self: center;
   align-self: center;
 }
 
 /* ---------------------- Параметры для экрана с разрешением >= 768 ------------------- */
 @media (width >= 768px) {
+
+  .header {
+    margin-bottom: 60px;
+  }
 
   .decorated-zone::before {
     top: 20px;

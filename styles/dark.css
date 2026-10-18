@@ -20,4 +20,5 @@
   --visibility-value: visible;
   --accent-color: #ff007f;
   --theme-text-color: #ff007f;
+  --rec-display: flex;
 }

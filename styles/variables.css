@@ -20,6 +20,7 @@
   --card-title: #353430;
   --accent-color: #353430;
   --theme-text-color: #353430;
+  --rec-display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,5 +35,6 @@
     --card-title: #000028;
     --accent-color: #ff007f;
     --theme-text-color: #ff007f;
+    --rec-display: flex;
   }
 }
