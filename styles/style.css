@@ -16,8 +16,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
@@ -75,8 +77,7 @@
 }
 
 .header__theme-menu {
-  display: flex;
-  justify-self: end;
+  align-self: flex-end;
   margin-top: 75px;
 }
 
@@ -86,6 +87,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 10px;
 }
 
@@ -112,44 +114,27 @@
   border: 1px solid var(--accent-color, #ff007f);
 }
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  grid-row: 3 / 7;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-grow: 1;
-  width: 100%;
-}
-
 .hero__title {
-  font-size: clamp(3rem, 15vw, 7.5rem);
   line-height: 0.9;
   font-weight: 700;
-  /* font-size: 116px; */
+  font-size: 116px;
   text-transform: lowercase;
   color: var(--main-title-color, #DB00FF);
   text-shadow: 3px 3px 0 var(--text-shadow-color);
-  /* grid-row: 4 / 5; */
-  /* margin-top: auto; */
-  /* margin-bottom: auto; */
   align-self: flex-start;
+  justify-self: center;
 }
 
 .hero__description {
-  /* margin-top: auto; */
-  /* margin-bottom: auto; */
-  /* grid-row: 6 / 7; */
-  align-self: flex-end;
-  padding: 10px 15px;
   background-color: var(--accent-background, #ff0055);
   color: var(--text-on-accent, #000028);
   font-size: 18px;
   line-height: 1.3;
   font-weight: 700;
   box-sizing: border-box;
+  padding: 10px 15px;
+  align-self: stretch;
 }
-
 
 /* ------------- Секция с текстовыми карточками --------------------- */
 
@@ -232,8 +217,8 @@
   list-style: none;
   margin: 0;
   display: grid;
-  grid-template-columns: 1;
-  gap: 10px; 
+  grid-template-columns: 1fr;
+  gap: 10px;
   margin-top: 10px;
 }
 
@@ -254,10 +239,10 @@
 }
 
 .footer__text {
-  font-size: clamp(3rem, 15vw, 7.5rem);
+  /* font-size: clamp(3rem, 15vw, 7.5rem); */
   line-height: 0.9;
   font-weight: 700;
-  /* font-size: 116px; */
+  font-size: 116px;
   text-transform: lowercase;
   color: var(--main-title-color, #DB00FF);
   text-shadow: 2px 2px 0 var(--text-shadow-color);
@@ -272,9 +257,9 @@
     margin-top: 192px;
   }
 
-  .hero__container {
+  /* .hero__container {
     grid-row: 4 / 7;
-  }
+  } */
 
   .decorated-zone::before {
     top: 20px;
@@ -419,9 +404,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .second__section__title {
+  /* .second__section__title {
     grid-column: 1 / 2;
-  }
+  } */
 
   .second-features-list {
     display: grid;
