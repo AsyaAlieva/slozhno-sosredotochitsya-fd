@@ -22,6 +22,7 @@
   /* padding: 10px; */
   box-sizing: border-box;
   margin-bottom: 40px;
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -91,11 +92,12 @@
 }
 
 .header__theme-menu-item:hover {
-  border: 1px solid #930a4e;
+  border: 1px solid var(--theme-button-hover, #930a4e);
 }
 
 .header__theme-menu-item:focus {
   text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color, #FF0070)
 }
 
 .header__theme-menu-button {
@@ -119,7 +121,7 @@
   font-size: 116px;
   text-transform: lowercase;
   color: var(--main-title-color, #DB00FF);
-  text-shadow: 3px 3px 0 var(--text-shadow-color);
+  text-shadow: 3px 3px 0 var(--text-shadow-color, #FF0070);
   display: flex;
   flex-wrap: wrap;
   /* width: 100%; */
@@ -140,15 +142,16 @@
 /* ------------- Секция с текстовыми карточками --------------------- */
 
 .decorated-word {
-  text-shadow: 2px 2px 0 var(--text-shadow-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color, #FF0070);
 }
 
 .decorated-word:focus {
-  text-decoration: underline;
+  border: 1px solid var(--theme-button-hover, #930a4e);
 }
 
 .decorated-word:hover {
-  border: 1px solid var(--text-color, #F1B2CE);
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color, #FF0070)
 }
 
 .section-with-text {
@@ -231,16 +234,16 @@
 .footer {
   height: 100vh;
   display: grid;
+  min-block-size: 668px;
 }
 
 .footer__text {
-  /* font-size: clamp(3rem, 15vw, 7.5rem); */
   line-height: 0.9;
   font-weight: 700;
   font-size: 116px;
   text-transform: lowercase;
   color: var(--main-title-color, #DB00FF);
-  text-shadow: 2px 2px 0 var(--text-shadow-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color, #FF0070);
   justify-self: center;
   align-self: center;
 }
@@ -250,7 +253,6 @@
 
   .header {
     margin-bottom: 60px;
-    /* padding: 20px; */
   }
 
   .header__theme-menu {

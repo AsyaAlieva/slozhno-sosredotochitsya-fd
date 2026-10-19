@@ -21,6 +21,8 @@
   --accent-color: #ff007f;
   --theme-text-color: #ff007f;
   --rec-display: flex;
+  --text-decoration-color: #FF0070;
+  --theme-button-hover: #930a4e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +39,7 @@
     --accent-color: #ff007f;
     --theme-text-color: #ff007f;
     --rec-display: flex;
+    --text-decoration-color: #FF0070;
+    --theme-button-hover: #930a4e;
   }
 }
