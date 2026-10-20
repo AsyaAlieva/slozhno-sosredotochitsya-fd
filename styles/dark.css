@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url('../images/cover-image-dark.png');
-  --background-color: rgb(6, 1, 30);
+  --background-color: #000028;
   --text-color: #F1B2CE;
   --main-title-color: #DB00FF;
   --text-shadow-color: #FF0070;
@@ -23,23 +23,4 @@
   --rec-display: flex;
   --text-decoration-color: #FF0070;
   --theme-button-hover: #930a4e;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-image: url('../images/cover-image-dark.png');
-    --background-color: rgb(6, 1, 30);
-    --text-color: #F1B2CE;
-    --main-title-color: #DB00FF;
-    --text-shadow-color: #FF0070;
-    --accent-background: #FF0070;
-    --title-color: #FF0070;
-    --card-title: #000028;
-    --visibility-value: visible;
-    --accent-color: #ff007f;
-    --theme-text-color: #ff007f;
-    --rec-display: flex;
-    --text-decoration-color: #FF0070;
-    --theme-button-hover: #930a4e;
-  }
 }

@@ -4,15 +4,37 @@
 */
 
 :root {
-  --background-image: url('../images/cover-image-light.png');
-  --background-color: rgb(255, 245, 245);
-  --text-color: #353430;
-  --main-title-color: #FFC2E6;
-  --text-shadow-color: #FF8DCB;
-  --accent-background: #FF8DCB;
-  --title-color: #353430;
-  --card-title: #353430;
-  --accent-color: #353430;
-  --theme-text-color: #353430;
-  --rec-display: none;
+  --background-image: url('../images/cover-image-dark.png');
+  --background-color: #000028;
+  --text-color: #F1B2CE;
+  --main-title-color: #DB00FF;
+  --text-shadow-color: #FF0070;
+  --accent-background: #FF0070;
+  --title-color: #FF0070;
+  --card-title: #000028;
+  --visibility-value: visible;
+  --accent-color: #ff007f;
+  --theme-text-color: #ff007f;
+  --rec-display: flex;
+  --text-decoration-color: #FF0070;
+  --theme-button-hover: #930a4e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url('../images/cover-image-dark.png');
+    --background-color: #000028;
+    --text-color: #F1B2CE;
+    --main-title-color: #DB00FF;
+    --text-shadow-color: #FF0070;
+    --accent-background: #FF0070;
+    --title-color: #FF0070;
+    --card-title: #000028;
+    --visibility-value: visible;
+    --accent-color: #ff007f;
+    --theme-text-color: #ff007f;
+    --rec-display: flex;
+    --text-decoration-color: #FF0070;
+    --theme-button-hover: #930a4e;
+  }
 }
