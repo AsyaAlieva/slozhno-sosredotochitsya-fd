@@ -22,7 +22,7 @@
   --theme-text-color: #353430;
   --rec-display: none;
   --text-decoration-color: #353430;
-  --theme-button-hover: #32312D66;
+  --theme-button-hover: rgba(53, 52, 48, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,6 +40,6 @@
     --theme-text-color: #353430;
     --rec-display: none;
     --text-decoration-color: #353430;
-    --theme-button-hover: #32312D66;
+    --theme-button-hover: rgba(53, 52, 48, 0.4);
   }
 }

@@ -17,7 +17,7 @@
   --theme-text-color: #ff007f;
   --rec-display: flex;
   --text-decoration-color: #FF0070;
-  --theme-button-hover: #930a4e;
+  --theme-button-hover: rgba(255, 0, 112, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +35,6 @@
     --theme-text-color: #ff007f;
     --rec-display: flex;
     --text-decoration-color: #FF0070;
-    --theme-button-hover: #930a4e;
+    --theme-button-hover: rgba(255, 0, 112, 0.4);
   }
 }
