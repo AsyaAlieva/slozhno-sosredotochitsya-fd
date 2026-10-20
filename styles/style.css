@@ -10,6 +10,7 @@
   background-position: center;
   font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 /* ---------------------------- Шапка сайта ------------------------------------ */
@@ -34,7 +35,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 1px solid var(--accent-color, #ff007f);
+  border: 1px solid var(--accent-color, #FF0070);
 }
 
 .decorated-zone::before {
@@ -69,8 +70,8 @@
   display: inline-block;
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color, #ff007f);
-  box-shadow: 0 0 4px 2px var(--accent-color, #ff007f);
+  background-color: var(--accent-color, #FF0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #FF0070);
   border-radius: 50%;
 }
 
@@ -121,7 +122,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color, #ff007f);
+  border: 1px solid var(--accent-color, #FF0070);
 }
 
 .hero__title {
@@ -139,8 +140,8 @@
 
 .hero__description {
   align-self: center;
-  color: var(--text-on-accent, #000028);
-  background-color: var(--accent-background, #ff0055);
+  color: var(--main-desc-color, #000028);
+  background-color: var(--accent-background, #FF0070);
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -162,7 +163,7 @@
 }
 
 .card__link:focus-visible {
-  border: 1px solid var(--theme-button-hover, #930a4e);
+  border: 1px solid var(--theme-button-hover, rgba(255, 0, 112, 0.4));
 }
 
 .card__link:hover {
@@ -180,7 +181,7 @@
 }
 
 .section__title {
-  color: var(--title-color);
+  color: var(--title-color, #FF0070);
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 700;
