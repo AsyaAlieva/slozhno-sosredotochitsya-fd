@@ -421,11 +421,6 @@
     width: calc(50% - 20px);
   }
 
-  .section-with-text__focus-challenges,
-  .section-with-text__focus-tips {
-    column-gap: 20px;
-  }
-
   .section-with-text__focus-killers {
     display: grid;
     grid-template-rows: auto 1fr;
