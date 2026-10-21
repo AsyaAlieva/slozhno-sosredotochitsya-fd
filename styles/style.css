@@ -446,9 +446,4 @@
     padding: 0;
     margin: 0;
   }
-
-  .footer__text {
-    /* font-size: 157px; */
-    font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
